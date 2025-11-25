@@ -1,0 +1,234 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Fundo */
+body {
+    min-height: 100%;
+    background: #121212; /*1B2838*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menus */
+a {
+  color: #FB8504;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: #FFD202;
+}
+
+.img-coruja {
+    height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  height: 8vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #000;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+/* ---------------------------- */
+/*        IMAGEM FULL WIDTH     */
+/* ---------------------------- */
+
+.Imagem-jogo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Imagem-jogo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Degradê só no canto esquerdo sem escurecer o resto */
+.Imagem-jogo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2000px; /* tamanho do degradê */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 5), rgba(0,0,0,0.0));
+    pointer-events: none;
+}
+
+.texto-imagem {
+    position: absolute;
+    bottom: 250px;       /* distância do rodapé da imagem */
+    left: 50px;         /* distância da lateral esquerda */
+    color: #FB8504;
+    max-width: 500px;
+}
+
+.texto-imagem h2 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.texto-imagem p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+/* GRUPO DOS RETÂNGULOS (sem espaço entre eles) */
+
+.grupo-retangulos {
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* RETÂNGULO BASE */
+.container-retangulo {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 25px; /* sem espaço entre os retângulos */
+}
+
+/* Lado da imagem */
+.lado-imagem {
+    width: 53%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.lado-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Lado do texto */
+.lado-texto {
+    width: 50%;
+    background: #5D1D02;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.lado-texto h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FB8504;
+}
+
+.lado-texto p{
+    font-size: 25px;
+    color: #FB8504;
+}
+
+/* Retângulo invertido – imagem vai pro lado direito */
+.container-retangulo.invertido {
+    flex-direction: row-reverse;
+}
+
+.Download{
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.Download h1{
+    color: #FB8504;
+}
+
+
+/* Footer */
+
+footer {
+    border: #000 solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #272727;
+    color: aliceblue;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 10px 25px;
+    padding: 15px 50px;
+}
+
+footer a {
+    color: aliceblue;
+}
+
+footer img {
+    width: 25px;
+    margin: 5px 15px;
+}
+
+#mapa {
+    text-align: center;
+}
+
+#mapa iframe {
+    width: 300px;
+    height: 150px;
+}
+
+.box_atendimento{
+    text-align: center;
+}
+
+#Atendimento ul {
+    list-style: none;
+}
+
+
+
